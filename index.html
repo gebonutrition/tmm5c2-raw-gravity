@@ -19,7 +19,19 @@
     a:hover { color:#FF5A1F; }
     [hidden] { display:none !important; }
     @keyframes marquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
-    .marquee-track { display:flex; width:max-content; animation:marquee 20s linear infinite; will-change:transform; }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 20s linear infinite;
+      will-change: transform;
+
+      font-family: 'Manrope', Arial, sans-serif;
+      font-weight: 800;
+      font-size: 11px;
+      letter-spacing: 2.5px;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
     .marquee-group { display:flex; flex:0 0 auto; align-items:center; white-space:nowrap; }
     .marquee-group span { flex:0 0 auto; margin:0 22px; background:linear-gradient(90deg,#3DDC5A,#2FB4FF,#7B4DFF,#D14DFF); -webkit-background-clip:text; background-clip:text; color:transparent; }
     @keyframes btnglow { 0%,100% { box-shadow:0 0 0 1px #000,0 0 7px 1px rgba(255,255,255,.8),0 0 16px 2px rgba(255,255,255,.45); } 50% { box-shadow:0 0 0 1px #000,0 0 12px 3px rgba(255,255,255,1),0 0 25px 6px rgba(255,255,255,.6); } }
